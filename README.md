@@ -1,1 +1,1 @@
-Autor: Ramon Zinhani de Cezaro
+Autor: Pedro Henrique Muller, Raul, Ramon Zinhani de Cezaro
