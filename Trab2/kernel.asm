@@ -6,21 +6,21 @@ _f_copia_quadro:
 	sub sp, 2
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_5:
+_L1ad75ab7_5:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 16
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_8
+	jmpc lt, _L1ad75ab7_8
 	ld r0, 0
-	jmp _L28a908ba_9
-_L28a908ba_8:
+	jmp _L1ad75ab7_9
+_L1ad75ab7_8:
 	ld r0, 1
-_L28a908ba_9:
+_L1ad75ab7_9:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_7
+	jmpc eq, _L1ad75ab7_7
 	ld r0, (bp+4)
 	push r0
 	ld r0, (bp+-2)
@@ -37,14 +37,14 @@ _L28a908ba_9:
 	ld r0, (r1)
 	pop r1
 	st r0, (r1)
-_L28a908ba_6:
+_L1ad75ab7_6:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_5
-_L28a908ba_7:
+	jmp _L1ad75ab7_5
+_L1ad75ab7_7:
 	ld sp, bp
 	pop bp
 	ret
@@ -83,7 +83,7 @@ _f_fila_sai:
 	st r0, (bp+-2)
 	ld r0, (bp+4)
 	st r0, (bp+-4)
-_L28a908ba_15:
+_L1ad75ab7_15:
 	ld r0, (bp+-4)
 	push r0
 	ld r0, (_g_nfila)
@@ -95,14 +95,14 @@ _L28a908ba_15:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_18
+	jmpc lt, _L1ad75ab7_18
 	ld r0, 0
-	jmp _L28a908ba_19
-_L28a908ba_18:
+	jmp _L1ad75ab7_19
+_L1ad75ab7_18:
 	ld r0, 1
-_L28a908ba_19:
+_L1ad75ab7_19:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_17
+	jmpc eq, _L1ad75ab7_17
 	ld r0, _g_fila
 	push r0
 	ld r0, (bp+-4)
@@ -124,14 +124,14 @@ _L28a908ba_19:
 	ld r0, (r1)
 	pop r1
 	st r0, (r1)
-_L28a908ba_16:
+_L1ad75ab7_16:
 	ld r0, (bp+-4)
 	push r0
 	add r0, 1
 	st r0, (bp+-4)
 	pop r0
-	jmp _L28a908ba_15
-_L28a908ba_17:
+	jmp _L1ad75ab7_15
+_L1ad75ab7_17:
 	ld r0, (_g_nfila)
 	push r0
 	add r0, -1
@@ -150,21 +150,21 @@ _f_remove_da_fila:
 	sub sp, 2
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_28:
+_L1ad75ab7_28:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, (_g_nfila)
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_31
+	jmpc lt, _L1ad75ab7_31
 	ld r0, 0
-	jmp _L28a908ba_32
-_L28a908ba_31:
+	jmp _L1ad75ab7_32
+_L1ad75ab7_31:
 	ld r0, 1
-_L28a908ba_32:
+_L1ad75ab7_32:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_30
+	jmpc eq, _L1ad75ab7_30
 	ld r0, _g_fila
 	push r0
 	ld r0, (bp+-2)
@@ -177,14 +177,14 @@ _L28a908ba_32:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_33
+	jmpc eq, _L1ad75ab7_33
 	ld r0, 0
-	jmp _L28a908ba_34
-_L28a908ba_33:
+	jmp _L1ad75ab7_34
+_L1ad75ab7_33:
 	ld r0, 1
-_L28a908ba_34:
+_L1ad75ab7_34:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_35
+	jmpc eq, _L1ad75ab7_35
 	ld r0, (bp+-2)
 	push r0
 	call _f_fila_sai
@@ -192,15 +192,15 @@ _L28a908ba_34:
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_35:
-_L28a908ba_29:
+_L1ad75ab7_35:
+_L1ad75ab7_29:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_28
-_L28a908ba_30:
+	jmp _L1ad75ab7_28
+_L1ad75ab7_30:
 	ld sp, bp
 	pop bp
 	ret
@@ -241,14 +241,14 @@ _f_muda_estado:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_53
+	jmpc ne, _L1ad75ab7_53
 	ld r0, 0
-	jmp _L28a908ba_54
-_L28a908ba_53:
+	jmp _L1ad75ab7_54
+_L1ad75ab7_53:
 	ld r0, 1
-_L28a908ba_54:
+_L1ad75ab7_54:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_55
+	jmpc eq, _L1ad75ab7_55
 	ld r0, (bp+-2)
 	ld r1, r0
 	ld r0, r1
@@ -283,7 +283,7 @@ _L28a908ba_54:
 	add r0, r1
 	pop r1
 	st r0, (r1)
-_L28a908ba_55:
+_L1ad75ab7_55:
 	ld r0, (bp+-2)
 	ld r1, r0
 	push r1
@@ -333,56 +333,56 @@ _L28a908ba_55:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_58
+	jmpc eq, _L1ad75ab7_58
 	ld r0, 0
-	jmp _L28a908ba_59
-_L28a908ba_58:
+	jmp _L1ad75ab7_59
+_L1ad75ab7_58:
 	ld r0, 1
-_L28a908ba_59:
+_L1ad75ab7_59:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_57
+	jmpc eq, _L1ad75ab7_57
 	ld r0, (bp+-4)
 	push r0
 	ld r0, 2
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_60
+	jmpc eq, _L1ad75ab7_60
 	ld r0, 0
-	jmp _L28a908ba_61
-_L28a908ba_60:
+	jmp _L1ad75ab7_61
+_L1ad75ab7_60:
 	ld r0, 1
-_L28a908ba_61:
+_L1ad75ab7_61:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_57
+	jmpc eq, _L1ad75ab7_57
 	ld r0, 1
-	jmp _L28a908ba_56
-_L28a908ba_57:
+	jmp _L1ad75ab7_56
+_L1ad75ab7_57:
 	ld r0, 0
-_L28a908ba_56:
+_L1ad75ab7_56:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_62
+	jmpc eq, _L1ad75ab7_62
 	ld r0, (bp+-2)
 	ld r1, r0
 	push r1
 	ld r0, (_g_tempo)
 	pop r1
 	st r0, (r1+28)
-_L28a908ba_62:
+_L1ad75ab7_62:
 	ld r0, (bp+6)
 	push r0
 	ld r0, 3
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_65
+	jmpc eq, _L1ad75ab7_65
 	ld r0, 0
-	jmp _L28a908ba_66
-_L28a908ba_65:
+	jmp _L1ad75ab7_66
+_L1ad75ab7_65:
 	ld r0, 1
-_L28a908ba_66:
+_L1ad75ab7_66:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_64
+	jmpc eq, _L1ad75ab7_64
 	ld r0, (bp+-2)
 	ld r1, r0
 	ld r0, (r1+28)
@@ -391,21 +391,21 @@ _L28a908ba_66:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ge, _L28a908ba_67
+	jmpc ge, _L1ad75ab7_67
 	ld r0, 0
-	jmp _L28a908ba_68
-_L28a908ba_67:
+	jmp _L1ad75ab7_68
+_L1ad75ab7_67:
 	ld r0, 1
-_L28a908ba_68:
+_L1ad75ab7_68:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_64
+	jmpc eq, _L1ad75ab7_64
 	ld r0, 1
-	jmp _L28a908ba_63
-_L28a908ba_64:
+	jmp _L1ad75ab7_63
+_L1ad75ab7_64:
 	ld r0, 0
-_L28a908ba_63:
+_L1ad75ab7_63:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_69
+	jmpc eq, _L1ad75ab7_69
 	ld r0, (bp+-2)
 	ld r1, r0
 	push r1
@@ -447,7 +447,7 @@ _L28a908ba_63:
 	add r0, 1
 	pop r1
 	st r0, (r1+28)
-_L28a908ba_69:
+_L1ad75ab7_69:
 	ld sp, bp
 	pop bp
 	ret
@@ -468,34 +468,34 @@ _f_perde_cpu:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_76
+	jmpc lt, _L1ad75ab7_76
 	ld r0, 0
-	jmp _L28a908ba_77
-_L28a908ba_76:
+	jmp _L1ad75ab7_77
+_L1ad75ab7_76:
 	ld r0, 1
-_L28a908ba_77:
+_L1ad75ab7_77:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_78
+	jmpc eq, _L1ad75ab7_78
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_78:
+_L1ad75ab7_78:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, (_g_quantum)
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc gt, _L28a908ba_79
+	jmpc gt, _L1ad75ab7_79
 	ld r0, 0
-	jmp _L28a908ba_80
-_L28a908ba_79:
+	jmp _L1ad75ab7_80
+_L1ad75ab7_79:
 	ld r0, 1
-_L28a908ba_80:
+_L1ad75ab7_80:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_81
+	jmpc eq, _L1ad75ab7_81
 	ld r0, (_g_quantum)
 	st r0, (bp+-2)
-_L28a908ba_81:
+_L1ad75ab7_81:
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+4)
@@ -544,19 +544,19 @@ _f_entra_ocioso:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_85
+	jmpc eq, _L1ad75ab7_85
 	ld r0, 0
-	jmp _L28a908ba_86
-_L28a908ba_85:
+	jmp _L1ad75ab7_86
+_L1ad75ab7_85:
 	ld r0, 1
-_L28a908ba_86:
+_L1ad75ab7_86:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_87
+	jmpc eq, _L1ad75ab7_87
 	ld r0, 1
 	st r0, (_g_ociosa)
 	ld r0, (_g_tempo)
 	st r0, (_g_ocioso_ini)
-_L28a908ba_87:
+_L1ad75ab7_87:
 	ld sp, bp
 	pop bp
 	ret
@@ -569,14 +569,14 @@ _f_sai_ocioso:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_91
+	jmpc ne, _L1ad75ab7_91
 	ld r0, 0
-	jmp _L28a908ba_92
-_L28a908ba_91:
+	jmp _L1ad75ab7_92
+_L1ad75ab7_91:
 	ld r0, 1
-_L28a908ba_92:
+_L1ad75ab7_92:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_93
+	jmpc eq, _L1ad75ab7_93
 	ld r0, 0
 	st r0, (_g_ociosa)
 	ld r0, (_g_ocioso_total)
@@ -591,7 +591,7 @@ _L28a908ba_92:
 	pop r0
 	add r0, r1
 	st r0, (_g_ocioso_total)
-_L28a908ba_93:
+_L1ad75ab7_93:
 	ld sp, bp
 	pop bp
 	ret
@@ -601,21 +601,21 @@ _f_monta_quadro_ocioso:
 	sub sp, 2
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_99:
+_L1ad75ab7_99:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 16
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_102
+	jmpc lt, _L1ad75ab7_102
 	ld r0, 0
-	jmp _L28a908ba_103
-_L28a908ba_102:
+	jmp _L1ad75ab7_103
+_L1ad75ab7_102:
 	ld r0, 1
-_L28a908ba_103:
+_L1ad75ab7_103:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_101
+	jmpc eq, _L1ad75ab7_101
 	ld r0, (bp+4)
 	push r0
 	ld r0, (bp+-2)
@@ -626,14 +626,14 @@ _L28a908ba_103:
 	ld r0, 0
 	pop r1
 	st r0, (r1)
-_L28a908ba_100:
+_L1ad75ab7_100:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_99
-_L28a908ba_101:
+	jmp _L1ad75ab7_99
+_L1ad75ab7_101:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 6
@@ -712,21 +712,21 @@ _f_monta_quadro_proc:
 	st r0, (bp+-4)
 	ld r0, 0
 	st r0, (bp+-6)
-_L28a908ba_109:
+_L1ad75ab7_109:
 	ld r0, (bp+-6)
 	push r0
 	ld r0, 16
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_112
+	jmpc lt, _L1ad75ab7_112
 	ld r0, 0
-	jmp _L28a908ba_113
-_L28a908ba_112:
+	jmp _L1ad75ab7_113
+_L1ad75ab7_112:
 	ld r0, 1
-_L28a908ba_113:
+_L1ad75ab7_113:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_111
+	jmpc eq, _L1ad75ab7_111
 	ld r0, (bp+-2)
 	push r0
 	ld r0, (bp+-6)
@@ -737,14 +737,14 @@ _L28a908ba_113:
 	ld r0, 0
 	pop r1
 	st r0, (r1)
-_L28a908ba_110:
+_L1ad75ab7_110:
 	ld r0, (bp+-6)
 	push r0
 	add r0, 1
 	st r0, (bp+-6)
 	pop r0
-	jmp _L28a908ba_109
-_L28a908ba_111:
+	jmp _L1ad75ab7_109
+_L1ad75ab7_111:
 	ld r0, (bp+-4)
 	push r0
 	ld r0, 160
@@ -829,38 +829,38 @@ _f_acha_pid:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc le, _L28a908ba_129
+	jmpc le, _L1ad75ab7_129
 	ld r0, 0
-	jmp _L28a908ba_130
-_L28a908ba_129:
+	jmp _L1ad75ab7_130
+_L1ad75ab7_129:
 	ld r0, 1
-_L28a908ba_130:
+_L1ad75ab7_130:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_131
+	jmpc eq, _L1ad75ab7_131
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_131:
+_L1ad75ab7_131:
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_132:
+_L1ad75ab7_132:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 5
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_135
+	jmpc lt, _L1ad75ab7_135
 	ld r0, 0
-	jmp _L28a908ba_136
-_L28a908ba_135:
+	jmp _L1ad75ab7_136
+_L1ad75ab7_135:
 	ld r0, 1
-_L28a908ba_136:
+_L1ad75ab7_136:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_134
+	jmpc eq, _L1ad75ab7_134
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -873,14 +873,14 @@ _L28a908ba_136:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_139
+	jmpc ne, _L1ad75ab7_139
 	ld r0, 0
-	jmp _L28a908ba_140
-_L28a908ba_139:
+	jmp _L1ad75ab7_140
+_L1ad75ab7_139:
 	ld r0, 1
-_L28a908ba_140:
+_L1ad75ab7_140:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_138
+	jmpc eq, _L1ad75ab7_138
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -893,34 +893,34 @@ _L28a908ba_140:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_141
+	jmpc eq, _L1ad75ab7_141
 	ld r0, 0
-	jmp _L28a908ba_142
-_L28a908ba_141:
+	jmp _L1ad75ab7_142
+_L1ad75ab7_141:
 	ld r0, 1
-_L28a908ba_142:
+_L1ad75ab7_142:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_138
+	jmpc eq, _L1ad75ab7_138
 	ld r0, 1
-	jmp _L28a908ba_137
-_L28a908ba_138:
+	jmp _L1ad75ab7_137
+_L1ad75ab7_138:
 	ld r0, 0
-_L28a908ba_137:
+_L1ad75ab7_137:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_143
+	jmpc eq, _L1ad75ab7_143
 	ld r0, (bp+-2)
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_143:
-_L28a908ba_133:
+_L1ad75ab7_143:
+_L1ad75ab7_133:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_132
-_L28a908ba_134:
+	jmp _L1ad75ab7_132
+_L1ad75ab7_134:
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
@@ -936,21 +936,21 @@ _f_acha_livre:
 	sub sp, 2
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_152:
+_L1ad75ab7_152:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 5
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_155
+	jmpc lt, _L1ad75ab7_155
 	ld r0, 0
-	jmp _L28a908ba_156
-_L28a908ba_155:
+	jmp _L1ad75ab7_156
+_L1ad75ab7_155:
 	ld r0, 1
-_L28a908ba_156:
+_L1ad75ab7_156:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_154
+	jmpc eq, _L1ad75ab7_154
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -963,27 +963,27 @@ _L28a908ba_156:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_157
+	jmpc eq, _L1ad75ab7_157
 	ld r0, 0
-	jmp _L28a908ba_158
-_L28a908ba_157:
+	jmp _L1ad75ab7_158
+_L1ad75ab7_157:
 	ld r0, 1
-_L28a908ba_158:
+_L1ad75ab7_158:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_159
+	jmpc eq, _L1ad75ab7_159
 	ld r0, (bp+-2)
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_159:
-_L28a908ba_153:
+_L1ad75ab7_159:
+_L1ad75ab7_153:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_152
-_L28a908ba_154:
+	jmp _L1ad75ab7_152
+_L1ad75ab7_154:
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
@@ -1003,21 +1003,21 @@ _f_acha_bloq:
 	st r0, (bp+-4)
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_186:
+_L1ad75ab7_186:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 5
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_189
+	jmpc lt, _L1ad75ab7_189
 	ld r0, 0
-	jmp _L28a908ba_190
-_L28a908ba_189:
+	jmp _L1ad75ab7_190
+_L1ad75ab7_189:
 	ld r0, 1
-_L28a908ba_190:
+_L1ad75ab7_190:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_188
+	jmpc eq, _L1ad75ab7_188
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -1030,14 +1030,14 @@ _L28a908ba_190:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_193
+	jmpc eq, _L1ad75ab7_193
 	ld r0, 0
-	jmp _L28a908ba_194
-_L28a908ba_193:
+	jmp _L1ad75ab7_194
+_L1ad75ab7_193:
 	ld r0, 1
-_L28a908ba_194:
+_L1ad75ab7_194:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_192
+	jmpc eq, _L1ad75ab7_192
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -1050,35 +1050,35 @@ _L28a908ba_194:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_195
+	jmpc eq, _L1ad75ab7_195
 	ld r0, 0
-	jmp _L28a908ba_196
-_L28a908ba_195:
+	jmp _L1ad75ab7_196
+_L1ad75ab7_195:
 	ld r0, 1
-_L28a908ba_196:
+_L1ad75ab7_196:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_192
+	jmpc eq, _L1ad75ab7_192
 	ld r0, 1
-	jmp _L28a908ba_191
-_L28a908ba_192:
+	jmp _L1ad75ab7_191
+_L1ad75ab7_192:
 	ld r0, 0
-_L28a908ba_191:
+_L1ad75ab7_191:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_197
+	jmpc eq, _L1ad75ab7_197
 	ld r0, (bp+6)
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_200
+	jmpc lt, _L1ad75ab7_200
 	ld r0, 0
-	jmp _L28a908ba_201
-_L28a908ba_200:
+	jmp _L1ad75ab7_201
+_L1ad75ab7_200:
 	ld r0, 1
-_L28a908ba_201:
+_L1ad75ab7_201:
 	cmp r0, 0
-	jmpc ne, _L28a908ba_199
+	jmpc ne, _L1ad75ab7_199
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -1091,39 +1091,39 @@ _L28a908ba_201:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_202
+	jmpc eq, _L1ad75ab7_202
 	ld r0, 0
-	jmp _L28a908ba_203
-_L28a908ba_202:
+	jmp _L1ad75ab7_203
+_L1ad75ab7_202:
 	ld r0, 1
-_L28a908ba_203:
+_L1ad75ab7_203:
 	cmp r0, 0
-	jmpc ne, _L28a908ba_199
+	jmpc ne, _L1ad75ab7_199
 	ld r0, 0
-	jmp _L28a908ba_198
-_L28a908ba_199:
+	jmp _L1ad75ab7_198
+_L1ad75ab7_199:
 	ld r0, 1
-_L28a908ba_198:
+_L1ad75ab7_198:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_204
+	jmpc eq, _L1ad75ab7_204
 	ld r0, (bp+-4)
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_205
+	jmpc lt, _L1ad75ab7_205
 	ld r0, 0
-	jmp _L28a908ba_206
-_L28a908ba_205:
+	jmp _L1ad75ab7_206
+_L1ad75ab7_205:
 	ld r0, 1
-_L28a908ba_206:
+_L1ad75ab7_206:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_207
+	jmpc eq, _L1ad75ab7_207
 	ld r0, (bp+-2)
 	st r0, (bp+-4)
-	jmp _L28a908ba_208
-_L28a908ba_207:
+	jmp _L1ad75ab7_208
+_L1ad75ab7_207:
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -1147,29 +1147,77 @@ _L28a908ba_207:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_209
+	jmpc lt, _L1ad75ab7_209
 	ld r0, 0
-	jmp _L28a908ba_210
-_L28a908ba_209:
+	jmp _L1ad75ab7_210
+_L1ad75ab7_209:
 	ld r0, 1
-_L28a908ba_210:
+_L1ad75ab7_210:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_211
+	jmpc eq, _L1ad75ab7_211
 	ld r0, (bp+-2)
 	st r0, (bp+-4)
-_L28a908ba_211:
-_L28a908ba_208:
-_L28a908ba_204:
-_L28a908ba_197:
-_L28a908ba_187:
+_L1ad75ab7_211:
+_L1ad75ab7_208:
+_L1ad75ab7_204:
+_L1ad75ab7_197:
+_L1ad75ab7_187:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_186
-_L28a908ba_188:
+	jmp _L1ad75ab7_186
+_L1ad75ab7_188:
 	ld r0, (bp+-4)
+	ld sp, bp
+	pop bp
+	ret
+	ld sp, bp
+	pop bp
+	ret
+_f_con_pronta:
+	push bp
+	ld bp, sp
+	ld r0, (_g_con_verifica)
+	push r0
+	ld r0, 0
+	ld r1, r0
+	pop r0
+	cmp r0, r1
+	jmpc eq, _L1ad75ab7_217
+	ld r0, 0
+	jmp _L1ad75ab7_218
+_L1ad75ab7_217:
+	ld r0, 1
+_L1ad75ab7_218:
+	cmp r0, 0
+	jmpc eq, _L1ad75ab7_219
+	ld r0, 1
+	ld sp, bp
+	pop bp
+	ret
+_L1ad75ab7_219:
+	ld r0, 2
+	push r0
+	call _f_porta_in
+	add sp, 2
+	push r0
+	ld r0, 1
+	ld r1, r0
+	pop r0
+	and r0, r1
+	push r0
+	ld r0, 0
+	ld r1, r0
+	pop r0
+	cmp r0, r1
+	jmpc ne, _L1ad75ab7_220
+	ld r0, 0
+	jmp _L1ad75ab7_221
+_L1ad75ab7_220:
+	ld r0, 1
+_L1ad75ab7_221:
 	ld sp, bp
 	pop bp
 	ret
@@ -1231,36 +1279,36 @@ _f_escolhe:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_223
+	jmpc ne, _L1ad75ab7_233
 	ld r0, 0
-	jmp _L28a908ba_224
-_L28a908ba_223:
+	jmp _L1ad75ab7_234
+_L1ad75ab7_233:
 	ld r0, 1
-_L28a908ba_224:
+_L1ad75ab7_234:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_225
+	jmpc eq, _L1ad75ab7_235
 	ld r0, 0
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_225:
+_L1ad75ab7_235:
 	ld r0, 1
 	st r0, (bp+-2)
-_L28a908ba_226:
+_L1ad75ab7_236:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, (_g_nfila)
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_229
+	jmpc lt, _L1ad75ab7_239
 	ld r0, 0
-	jmp _L28a908ba_230
-_L28a908ba_229:
+	jmp _L1ad75ab7_240
+_L1ad75ab7_239:
 	ld r0, 1
-_L28a908ba_230:
+_L1ad75ab7_240:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_228
+	jmpc eq, _L1ad75ab7_238
 	ld r0, _g_tab
 	push r0
 	ld r0, _g_fila
@@ -1291,25 +1339,25 @@ _L28a908ba_230:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_231
+	jmpc lt, _L1ad75ab7_241
 	ld r0, 0
-	jmp _L28a908ba_232
-_L28a908ba_231:
+	jmp _L1ad75ab7_242
+_L1ad75ab7_241:
 	ld r0, 1
-_L28a908ba_232:
+_L1ad75ab7_242:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_233
+	jmpc eq, _L1ad75ab7_243
 	ld r0, (bp+-2)
 	st r0, (bp+-4)
-_L28a908ba_233:
-_L28a908ba_227:
+_L1ad75ab7_243:
+_L1ad75ab7_237:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_226
-_L28a908ba_228:
+	jmp _L1ad75ab7_236
+_L1ad75ab7_238:
 	ld r0, (bp+-4)
 	ld sp, bp
 	pop bp
@@ -1327,14 +1375,14 @@ _f_escalona:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_237
+	jmpc eq, _L1ad75ab7_247
 	ld r0, 0
-	jmp _L28a908ba_238
-_L28a908ba_237:
+	jmp _L1ad75ab7_248
+_L1ad75ab7_247:
 	ld r0, 1
-_L28a908ba_238:
+_L1ad75ab7_248:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_239
+	jmpc eq, _L1ad75ab7_249
 	call _f_entra_ocioso
 	ld r0, (_g_so_q)
 	push r0
@@ -1344,7 +1392,7 @@ _L28a908ba_238:
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_239:
+_L1ad75ab7_249:
 	call _f_sai_ocioso
 	call _f_escolhe
 	push r0
@@ -1455,63 +1503,63 @@ _f_cria_processo:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_255
+	jmpc lt, _L1ad75ab7_265
 	ld r0, 0
-	jmp _L28a908ba_256
-_L28a908ba_255:
+	jmp _L1ad75ab7_266
+_L1ad75ab7_265:
 	ld r0, 1
-_L28a908ba_256:
+_L1ad75ab7_266:
 	cmp r0, 0
-	jmpc ne, _L28a908ba_254
+	jmpc ne, _L1ad75ab7_264
 	ld r0, (bp+4)
 	push r0
 	ld r0, 12
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ge, _L28a908ba_257
+	jmpc ge, _L1ad75ab7_267
 	ld r0, 0
-	jmp _L28a908ba_258
-_L28a908ba_257:
+	jmp _L1ad75ab7_268
+_L1ad75ab7_267:
 	ld r0, 1
-_L28a908ba_258:
+_L1ad75ab7_268:
 	cmp r0, 0
-	jmpc ne, _L28a908ba_254
+	jmpc ne, _L1ad75ab7_264
 	ld r0, 0
-	jmp _L28a908ba_253
-_L28a908ba_254:
+	jmp _L1ad75ab7_263
+_L1ad75ab7_264:
 	ld r0, 1
-_L28a908ba_253:
+_L1ad75ab7_263:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_259
+	jmpc eq, _L1ad75ab7_269
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_259:
+_L1ad75ab7_269:
 	ld r0, (_g_criados)
 	push r0
 	ld r0, 24
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ge, _L28a908ba_260
+	jmpc ge, _L1ad75ab7_270
 	ld r0, 0
-	jmp _L28a908ba_261
-_L28a908ba_260:
+	jmp _L1ad75ab7_271
+_L1ad75ab7_270:
 	ld r0, 1
-_L28a908ba_261:
+_L1ad75ab7_271:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_262
+	jmpc eq, _L1ad75ab7_272
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_262:
+_L1ad75ab7_272:
 	call _f_acha_livre
 	st r0, (bp+-2)
 	ld r0, (bp+-2)
@@ -1520,21 +1568,21 @@ _L28a908ba_262:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_263
+	jmpc lt, _L1ad75ab7_273
 	ld r0, 0
-	jmp _L28a908ba_264
-_L28a908ba_263:
+	jmp _L1ad75ab7_274
+_L1ad75ab7_273:
 	ld r0, 1
-_L28a908ba_264:
+_L1ad75ab7_274:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_265
+	jmpc eq, _L1ad75ab7_275
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_265:
+_L1ad75ab7_275:
 	ld r0, (_g_criados)
 	push r0
 	add r0, 1
@@ -1741,7 +1789,7 @@ _f_termina:
 	ld r0, 0
 	pop r1
 	st r0, (r1)
-_L28a908ba_272:
+_L1ad75ab7_282:
 	ld r0, (bp+-4)
 	push r0
 	ld r0, 3
@@ -1755,25 +1803,25 @@ _L28a908ba_272:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_275
+	jmpc lt, _L1ad75ab7_285
 	ld r0, 0
-	jmp _L28a908ba_276
-_L28a908ba_275:
+	jmp _L1ad75ab7_286
+_L1ad75ab7_285:
 	ld r0, 1
-_L28a908ba_276:
+_L1ad75ab7_286:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_277
-	jmp _L28a908ba_274
-_L28a908ba_277:
+	jmpc eq, _L1ad75ab7_287
+	jmp _L1ad75ab7_284
+_L1ad75ab7_287:
 	ld r0, 0
 	push r0
 	ld r0, (bp+-6)
 	push r0
 	call _f_acorda
 	add sp, 4
-_L28a908ba_273:
-	jmp _L28a908ba_272
-_L28a908ba_274:
+_L1ad75ab7_283:
+	jmp _L1ad75ab7_282
+_L1ad75ab7_284:
 	ld sp, bp
 	pop bp
 	ret
@@ -1783,21 +1831,21 @@ _f_fim_do_sistema:
 	sub sp, 4
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_286:
+_L1ad75ab7_296:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 5
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_289
+	jmpc lt, _L1ad75ab7_299
 	ld r0, 0
-	jmp _L28a908ba_290
-_L28a908ba_289:
+	jmp _L1ad75ab7_300
+_L1ad75ab7_299:
 	ld r0, 1
-_L28a908ba_290:
+_L1ad75ab7_300:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_288
+	jmpc eq, _L1ad75ab7_298
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -1810,14 +1858,14 @@ _L28a908ba_290:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_291
+	jmpc ne, _L1ad75ab7_301
 	ld r0, 0
-	jmp _L28a908ba_292
-_L28a908ba_291:
+	jmp _L1ad75ab7_302
+_L1ad75ab7_301:
 	ld r0, 1
-_L28a908ba_292:
+_L1ad75ab7_302:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_293
+	jmpc eq, _L1ad75ab7_303
 	ld r0, _g_hist
 	push r0
 	ld r0, _g_tab
@@ -1883,15 +1931,15 @@ _L28a908ba_292:
 	add r0, r1
 	pop r1
 	st r0, (r1)
-_L28a908ba_293:
-_L28a908ba_287:
+_L1ad75ab7_303:
+_L1ad75ab7_297:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_286
-_L28a908ba_288:
+	jmp _L1ad75ab7_296
+_L1ad75ab7_298:
 	call _f_sai_ocioso
 	ld r0, _g_conta_int
 	push r0
@@ -1900,7 +1948,7 @@ _L28a908ba_288:
 	pop r1
 	add r1, r0
 	push r1
-	call _f_hw_cnt_console
+	ld r0, (_g_contagem_console)
 	pop r1
 	st r0, (r1)
 	call _f_relatorio
@@ -1912,7 +1960,7 @@ _f_trata_pendencias:
 	push bp
 	ld bp, sp
 	sub sp, 2
-_L28a908ba_312:
+_L1ad75ab7_322:
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
@@ -1928,42 +1976,42 @@ _L28a908ba_312:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_315
+	jmpc lt, _L1ad75ab7_325
 	ld r0, 0
-	jmp _L28a908ba_316
-_L28a908ba_315:
+	jmp _L1ad75ab7_326
+_L1ad75ab7_325:
 	ld r0, 1
-_L28a908ba_316:
+_L1ad75ab7_326:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_317
-	jmp _L28a908ba_314
-_L28a908ba_317:
+	jmpc eq, _L1ad75ab7_327
+	jmp _L1ad75ab7_324
+_L1ad75ab7_327:
 	call _f_hw_con_disponivel
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_318
+	jmpc eq, _L1ad75ab7_328
 	ld r0, 0
-	jmp _L28a908ba_319
-_L28a908ba_318:
+	jmp _L1ad75ab7_329
+_L1ad75ab7_328:
 	ld r0, 1
-_L28a908ba_319:
+_L1ad75ab7_329:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_320
-	jmp _L28a908ba_314
-_L28a908ba_320:
+	jmpc eq, _L1ad75ab7_330
+	jmp _L1ad75ab7_324
+_L1ad75ab7_330:
 	call _f_hw_con_le
 	push r0
 	ld r0, (bp+-2)
 	push r0
 	call _f_acorda
 	add sp, 4
-_L28a908ba_313:
-	jmp _L28a908ba_312
-_L28a908ba_314:
-_L28a908ba_321:
+_L1ad75ab7_323:
+	jmp _L1ad75ab7_322
+_L1ad75ab7_324:
+_L1ad75ab7_331:
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
@@ -1979,40 +2027,32 @@ _L28a908ba_321:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_324
+	jmpc lt, _L1ad75ab7_334
 	ld r0, 0
-	jmp _L28a908ba_325
-_L28a908ba_324:
+	jmp _L1ad75ab7_335
+_L1ad75ab7_334:
 	ld r0, 1
-_L28a908ba_325:
+_L1ad75ab7_335:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_326
-	jmp _L28a908ba_323
-_L28a908ba_326:
-	ld r0, 2
-	push r0
-	call _f_porta_in
-	add sp, 2
-	push r0
-	ld r0, 1
-	ld r1, r0
-	pop r0
-	and r0, r1
+	jmpc eq, _L1ad75ab7_336
+	jmp _L1ad75ab7_333
+_L1ad75ab7_336:
+	call _f_con_pronta
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_327
+	jmpc eq, _L1ad75ab7_337
 	ld r0, 0
-	jmp _L28a908ba_328
-_L28a908ba_327:
+	jmp _L1ad75ab7_338
+_L1ad75ab7_337:
 	ld r0, 1
-_L28a908ba_328:
+_L1ad75ab7_338:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_329
-	jmp _L28a908ba_323
-_L28a908ba_329:
+	jmpc eq, _L1ad75ab7_339
+	jmp _L1ad75ab7_333
+_L1ad75ab7_339:
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -2036,9 +2076,9 @@ _L28a908ba_329:
 	push r0
 	call _f_acorda
 	add sp, 4
-_L28a908ba_322:
-	jmp _L28a908ba_321
-_L28a908ba_323:
+_L1ad75ab7_332:
+	jmp _L1ad75ab7_331
+_L1ad75ab7_333:
 	ld sp, bp
 	pop bp
 	ret
@@ -2058,40 +2098,40 @@ _f_sys_le:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_339
+	jmpc lt, _L1ad75ab7_349
 	ld r0, 0
-	jmp _L28a908ba_340
-_L28a908ba_339:
+	jmp _L1ad75ab7_350
+_L1ad75ab7_349:
 	ld r0, 1
-_L28a908ba_340:
+_L1ad75ab7_350:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_338
+	jmpc eq, _L1ad75ab7_348
 	call _f_hw_con_disponivel
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_341
+	jmpc ne, _L1ad75ab7_351
 	ld r0, 0
-	jmp _L28a908ba_342
-_L28a908ba_341:
+	jmp _L1ad75ab7_352
+_L1ad75ab7_351:
 	ld r0, 1
-_L28a908ba_342:
+_L1ad75ab7_352:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_338
+	jmpc eq, _L1ad75ab7_348
 	ld r0, 1
-	jmp _L28a908ba_337
-_L28a908ba_338:
+	jmp _L1ad75ab7_347
+_L1ad75ab7_348:
 	ld r0, 0
-_L28a908ba_337:
+_L1ad75ab7_347:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_343
+	jmpc eq, _L1ad75ab7_353
 	call _f_hw_con_le
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_343:
+_L1ad75ab7_353:
 	ld r0, 1
 	push r0
 	call _f_bloqueia_atual
@@ -2119,43 +2159,35 @@ _f_sys_escreve:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_353
+	jmpc lt, _L1ad75ab7_363
 	ld r0, 0
-	jmp _L28a908ba_354
-_L28a908ba_353:
+	jmp _L1ad75ab7_364
+_L1ad75ab7_363:
 	ld r0, 1
-_L28a908ba_354:
+_L1ad75ab7_364:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_352
-	ld r0, 2
-	push r0
-	call _f_porta_in
-	add sp, 2
-	push r0
-	ld r0, 1
-	ld r1, r0
-	pop r0
-	and r0, r1
+	jmpc eq, _L1ad75ab7_362
+	call _f_con_pronta
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_355
+	jmpc ne, _L1ad75ab7_365
 	ld r0, 0
-	jmp _L28a908ba_356
-_L28a908ba_355:
+	jmp _L1ad75ab7_366
+_L1ad75ab7_365:
 	ld r0, 1
-_L28a908ba_356:
+_L1ad75ab7_366:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_352
+	jmpc eq, _L1ad75ab7_362
 	ld r0, 1
-	jmp _L28a908ba_351
-_L28a908ba_352:
+	jmp _L1ad75ab7_361
+_L1ad75ab7_362:
 	ld r0, 0
-_L28a908ba_351:
+_L1ad75ab7_361:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_357
+	jmpc eq, _L1ad75ab7_367
 	ld r0, (bp+4)
 	push r0
 	ld r0, 255
@@ -2171,7 +2203,7 @@ _L28a908ba_351:
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_357:
+_L1ad75ab7_367:
 	ld r0, _g_tab
 	push r0
 	ld r0, (_g_atual)
@@ -2216,45 +2248,45 @@ _f_sys_mata:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_375
+	jmpc eq, _L1ad75ab7_385
 	ld r0, 0
-	jmp _L28a908ba_376
-_L28a908ba_375:
+	jmp _L1ad75ab7_386
+_L1ad75ab7_385:
 	ld r0, 1
-_L28a908ba_376:
+_L1ad75ab7_386:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_377
+	jmpc eq, _L1ad75ab7_387
 	ld r0, (_g_atual)
 	st r0, (bp+-2)
-	jmp _L28a908ba_378
-_L28a908ba_377:
+	jmp _L1ad75ab7_388
+_L1ad75ab7_387:
 	ld r0, (bp+4)
 	push r0
 	call _f_acha_pid
 	add sp, 2
 	st r0, (bp+-2)
-_L28a908ba_378:
+_L1ad75ab7_388:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_379
+	jmpc lt, _L1ad75ab7_389
 	ld r0, 0
-	jmp _L28a908ba_380
-_L28a908ba_379:
+	jmp _L1ad75ab7_390
+_L1ad75ab7_389:
 	ld r0, 1
-_L28a908ba_380:
+_L1ad75ab7_390:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_381
+	jmpc eq, _L1ad75ab7_391
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_381:
+_L1ad75ab7_391:
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -2267,12 +2299,12 @@ _L28a908ba_381:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_382
+	jmpc eq, _L1ad75ab7_392
 	ld r0, 0
-	jmp _L28a908ba_383
-_L28a908ba_382:
+	jmp _L1ad75ab7_393
+_L1ad75ab7_392:
 	ld r0, 1
-_L28a908ba_383:
+_L1ad75ab7_393:
 	st r0, (bp+-4)
 	ld r0, (bp+-2)
 	push r0
@@ -2280,14 +2312,14 @@ _L28a908ba_383:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_384
+	jmpc eq, _L1ad75ab7_394
 	ld r0, 0
-	jmp _L28a908ba_385
-_L28a908ba_384:
+	jmp _L1ad75ab7_395
+_L1ad75ab7_394:
 	ld r0, 1
-_L28a908ba_385:
+_L1ad75ab7_395:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_386
+	jmpc eq, _L1ad75ab7_396
 	ld r0, (bp+-2)
 	push r0
 	call _f_termina
@@ -2298,14 +2330,14 @@ _L28a908ba_385:
 	st r0, (_g_atual)
 	ld r0, (bp+-4)
 	cmp r0, 0
-	jmpc eq, _L28a908ba_387
+	jmpc eq, _L1ad75ab7_397
 	call _f_fim_do_sistema
-_L28a908ba_387:
+_L1ad75ab7_397:
 	call _f_escalona
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_386:
+_L1ad75ab7_396:
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -2318,28 +2350,28 @@ _L28a908ba_386:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_388
+	jmpc eq, _L1ad75ab7_398
 	ld r0, 0
-	jmp _L28a908ba_389
-_L28a908ba_388:
+	jmp _L1ad75ab7_399
+_L1ad75ab7_398:
 	ld r0, 1
-_L28a908ba_389:
+_L1ad75ab7_399:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_390
+	jmpc eq, _L1ad75ab7_400
 	ld r0, (bp+-2)
 	push r0
 	call _f_remove_da_fila
 	add sp, 2
-_L28a908ba_390:
+_L1ad75ab7_400:
 	ld r0, (bp+-2)
 	push r0
 	call _f_termina
 	add sp, 2
 	ld r0, (bp+-4)
 	cmp r0, 0
-	jmpc eq, _L28a908ba_391
+	jmpc eq, _L1ad75ab7_401
 	call _f_fim_do_sistema
-_L28a908ba_391:
+_L1ad75ab7_401:
 	ld r0, 0
 	ld sp, bp
 	pop bp
@@ -2362,42 +2394,42 @@ _f_sys_espera:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_401
+	jmpc lt, _L1ad75ab7_411
 	ld r0, 0
-	jmp _L28a908ba_402
-_L28a908ba_401:
+	jmp _L1ad75ab7_412
+_L1ad75ab7_411:
 	ld r0, 1
-_L28a908ba_402:
+_L1ad75ab7_412:
 	cmp r0, 0
-	jmpc ne, _L28a908ba_400
+	jmpc ne, _L1ad75ab7_410
 	ld r0, (bp+-2)
 	push r0
 	ld r0, (_g_atual)
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_403
+	jmpc eq, _L1ad75ab7_413
 	ld r0, 0
-	jmp _L28a908ba_404
-_L28a908ba_403:
+	jmp _L1ad75ab7_414
+_L1ad75ab7_413:
 	ld r0, 1
-_L28a908ba_404:
+_L1ad75ab7_414:
 	cmp r0, 0
-	jmpc ne, _L28a908ba_400
+	jmpc ne, _L1ad75ab7_410
 	ld r0, 0
-	jmp _L28a908ba_399
-_L28a908ba_400:
+	jmp _L1ad75ab7_409
+_L1ad75ab7_410:
 	ld r0, 1
-_L28a908ba_399:
+_L1ad75ab7_409:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_405
+	jmpc eq, _L1ad75ab7_415
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_405:
+_L1ad75ab7_415:
 	ld r0, _g_tab
 	push r0
 	ld r0, (_g_atual)
@@ -2451,42 +2483,42 @@ _f_so_chamada:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_415
+	jmpc lt, _L1ad75ab7_425
 	ld r0, 0
-	jmp _L28a908ba_416
-_L28a908ba_415:
+	jmp _L1ad75ab7_426
+_L1ad75ab7_425:
 	ld r0, 1
-_L28a908ba_416:
+_L1ad75ab7_426:
 	cmp r0, 0
-	jmpc ne, _L28a908ba_414
+	jmpc ne, _L1ad75ab7_424
 	ld r0, (bp+6)
 	push r0
 	ld r0, 4
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc gt, _L28a908ba_417
+	jmpc gt, _L1ad75ab7_427
 	ld r0, 0
-	jmp _L28a908ba_418
-_L28a908ba_417:
+	jmp _L1ad75ab7_428
+_L1ad75ab7_427:
 	ld r0, 1
-_L28a908ba_418:
+_L1ad75ab7_428:
 	cmp r0, 0
-	jmpc ne, _L28a908ba_414
+	jmpc ne, _L1ad75ab7_424
 	ld r0, 0
-	jmp _L28a908ba_413
-_L28a908ba_414:
+	jmp _L1ad75ab7_423
+_L1ad75ab7_424:
 	ld r0, 1
-_L28a908ba_413:
+_L1ad75ab7_423:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_419
+	jmpc eq, _L1ad75ab7_429
 	ld r0, 1
 	xor r0, -1
 	add r0, 1
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_419:
+_L1ad75ab7_429:
 	ld r0, (bp+10)
 	push r0
 	ld r0, (bp+8)
@@ -2546,14 +2578,14 @@ _f_so_relogio:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_433
+	jmpc ne, _L1ad75ab7_443
 	ld r0, 0
-	jmp _L28a908ba_434
-_L28a908ba_433:
+	jmp _L1ad75ab7_444
+_L1ad75ab7_443:
 	ld r0, 1
-_L28a908ba_434:
+_L1ad75ab7_444:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_435
+	jmpc eq, _L1ad75ab7_445
 	ld r0, (_g_restante)
 	push r0
 	add r0, -1
@@ -2565,28 +2597,28 @@ _L28a908ba_434:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc le, _L28a908ba_436
+	jmpc le, _L1ad75ab7_446
 	ld r0, 0
-	jmp _L28a908ba_437
-_L28a908ba_436:
+	jmp _L1ad75ab7_447
+_L1ad75ab7_446:
 	ld r0, 1
-_L28a908ba_437:
+_L1ad75ab7_447:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_438
+	jmpc eq, _L1ad75ab7_448
 	ld r0, (_g_nfila)
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc gt, _L28a908ba_439
+	jmpc gt, _L1ad75ab7_449
 	ld r0, 0
-	jmp _L28a908ba_440
-_L28a908ba_439:
+	jmp _L1ad75ab7_450
+_L1ad75ab7_449:
 	ld r0, 1
-_L28a908ba_440:
+_L1ad75ab7_450:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_441
+	jmpc eq, _L1ad75ab7_451
 	ld r0, (bp+4)
 	push r0
 	ld r0, _g_tab
@@ -2666,13 +2698,13 @@ _L28a908ba_440:
 	xor r0, -1
 	add r0, 1
 	st r0, (_g_atual)
-	jmp _L28a908ba_442
-_L28a908ba_441:
+	jmp _L1ad75ab7_452
+_L1ad75ab7_451:
 	ld r0, (_g_quantum)
 	st r0, (_g_restante)
-_L28a908ba_442:
-_L28a908ba_438:
-_L28a908ba_435:
+_L1ad75ab7_452:
+_L1ad75ab7_448:
+_L1ad75ab7_445:
 	ld r0, (_g_atual)
 	push r0
 	ld r0, 1
@@ -2681,16 +2713,16 @@ _L28a908ba_435:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_443
+	jmpc eq, _L1ad75ab7_453
 	ld r0, 0
-	jmp _L28a908ba_444
-_L28a908ba_443:
+	jmp _L1ad75ab7_454
+_L1ad75ab7_453:
 	ld r0, 1
-_L28a908ba_444:
+_L1ad75ab7_454:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_445
+	jmpc eq, _L1ad75ab7_455
 	call _f_escalona
-_L28a908ba_445:
+_L1ad75ab7_455:
 	ld sp, bp
 	pop bp
 	ret
@@ -2706,51 +2738,51 @@ _f_so_inicia:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_457
+	jmpc lt, _L1ad75ab7_467
 	ld r0, 0
-	jmp _L28a908ba_458
-_L28a908ba_457:
+	jmp _L1ad75ab7_468
+_L1ad75ab7_467:
 	ld r0, 1
-_L28a908ba_458:
+_L1ad75ab7_468:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_459
+	jmpc eq, _L1ad75ab7_469
 	ld r0, 1
 	st r0, (_g_quantum)
-_L28a908ba_459:
+_L1ad75ab7_469:
 	ld r0, (_g_quantum)
 	push r0
 	ld r0, 30
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc gt, _L28a908ba_460
+	jmpc gt, _L1ad75ab7_470
 	ld r0, 0
-	jmp _L28a908ba_461
-_L28a908ba_460:
+	jmp _L1ad75ab7_471
+_L1ad75ab7_470:
 	ld r0, 1
-_L28a908ba_461:
+_L1ad75ab7_471:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_462
+	jmpc eq, _L1ad75ab7_472
 	ld r0, 30
 	st r0, (_g_quantum)
-_L28a908ba_462:
+_L1ad75ab7_472:
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_463:
+_L1ad75ab7_473:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 5
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_466
+	jmpc lt, _L1ad75ab7_476
 	ld r0, 0
-	jmp _L28a908ba_467
-_L28a908ba_466:
+	jmp _L1ad75ab7_477
+_L1ad75ab7_476:
 	ld r0, 1
-_L28a908ba_467:
+_L1ad75ab7_477:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_465
+	jmpc eq, _L1ad75ab7_475
 	ld r0, _g_tab
 	push r0
 	ld r0, (bp+-2)
@@ -2761,14 +2793,14 @@ _L28a908ba_467:
 	ld r0, 0
 	pop r1
 	st r0, (r1)
-_L28a908ba_464:
+_L1ad75ab7_474:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_463
-_L28a908ba_465:
+	jmp _L1ad75ab7_473
+_L1ad75ab7_475:
 	ld r0, 0
 	st r0, (_g_nfila)
 	ld r0, 1
@@ -2834,7 +2866,7 @@ _L28a908ba_465:
 _f_imp:
 	push bp
 	ld bp, sp
-_L28a908ba_472:
+_L1ad75ab7_482:
 	ld r0, (bp+4)
 	ld r1, r0
 	ldb r0, (r1)
@@ -2844,14 +2876,14 @@ _L28a908ba_472:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_474
+	jmpc ne, _L1ad75ab7_484
 	ld r0, 0
-	jmp _L28a908ba_475
-_L28a908ba_474:
+	jmp _L1ad75ab7_485
+_L1ad75ab7_484:
 	ld r0, 1
-_L28a908ba_475:
+_L1ad75ab7_485:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_473
+	jmpc eq, _L1ad75ab7_483
 	ld r0, (bp+4)
 	ld r1, r0
 	ldb r0, (r1)
@@ -2864,8 +2896,8 @@ _L28a908ba_475:
 	add r0, 1
 	st r0, (bp+4)
 	pop r0
-	jmp _L28a908ba_472
-_L28a908ba_473:
+	jmp _L1ad75ab7_482
+_L1ad75ab7_483:
 	ld sp, bp
 	pop bp
 	ret
@@ -2878,14 +2910,14 @@ _f_impn:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_482
+	jmpc lt, _L1ad75ab7_492
 	ld r0, 0
-	jmp _L28a908ba_483
-_L28a908ba_482:
+	jmp _L1ad75ab7_493
+_L1ad75ab7_492:
 	ld r0, 1
-_L28a908ba_483:
+_L1ad75ab7_493:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_484
+	jmpc eq, _L1ad75ab7_494
 	ld r0, 45
 	push r0
 	call _f_hw_putc
@@ -2897,21 +2929,21 @@ _L28a908ba_483:
 	pop r0
 	sub r0, r1
 	st r0, (bp+4)
-_L28a908ba_484:
+_L1ad75ab7_494:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 10
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ge, _L28a908ba_485
+	jmpc ge, _L1ad75ab7_495
 	ld r0, 0
-	jmp _L28a908ba_486
-_L28a908ba_485:
+	jmp _L1ad75ab7_496
+_L1ad75ab7_495:
 	ld r0, 1
-_L28a908ba_486:
+_L1ad75ab7_496:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_487
+	jmpc eq, _L1ad75ab7_497
 	ld r0, (bp+4)
 	push r0
 	ld r0, 10
@@ -2921,7 +2953,7 @@ _L28a908ba_486:
 	push r0
 	call _f_impn
 	add sp, 2
-_L28a908ba_487:
+_L1ad75ab7_497:
 	ld r0, 48
 	push r0
 	ld r0, (bp+4)
@@ -2999,210 +3031,210 @@ _f_nome_prog:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_521
+	jmpc eq, _L1ad75ab7_531
 	ld r0, 0
-	jmp _L28a908ba_522
-_L28a908ba_521:
+	jmp _L1ad75ab7_532
+_L1ad75ab7_531:
 	ld r0, 1
-_L28a908ba_522:
+_L1ad75ab7_532:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_523
-	ld r0, _str28a908ba_12
+	jmpc eq, _L1ad75ab7_533
+	ld r0, _str1ad75ab7_12
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_523:
+_L1ad75ab7_533:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 1
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_524
+	jmpc eq, _L1ad75ab7_534
 	ld r0, 0
-	jmp _L28a908ba_525
-_L28a908ba_524:
+	jmp _L1ad75ab7_535
+_L1ad75ab7_534:
 	ld r0, 1
-_L28a908ba_525:
+_L1ad75ab7_535:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_526
-	ld r0, _str28a908ba_13
+	jmpc eq, _L1ad75ab7_536
+	ld r0, _str1ad75ab7_13
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_526:
+_L1ad75ab7_536:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 2
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_527
+	jmpc eq, _L1ad75ab7_537
 	ld r0, 0
-	jmp _L28a908ba_528
-_L28a908ba_527:
+	jmp _L1ad75ab7_538
+_L1ad75ab7_537:
 	ld r0, 1
-_L28a908ba_528:
+_L1ad75ab7_538:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_529
-	ld r0, _str28a908ba_14
+	jmpc eq, _L1ad75ab7_539
+	ld r0, _str1ad75ab7_14
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_529:
+_L1ad75ab7_539:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 3
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_530
+	jmpc eq, _L1ad75ab7_540
 	ld r0, 0
-	jmp _L28a908ba_531
-_L28a908ba_530:
+	jmp _L1ad75ab7_541
+_L1ad75ab7_540:
 	ld r0, 1
-_L28a908ba_531:
+_L1ad75ab7_541:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_532
-	ld r0, _str28a908ba_15
+	jmpc eq, _L1ad75ab7_542
+	ld r0, _str1ad75ab7_15
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_532:
+_L1ad75ab7_542:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 4
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_533
+	jmpc eq, _L1ad75ab7_543
 	ld r0, 0
-	jmp _L28a908ba_534
-_L28a908ba_533:
+	jmp _L1ad75ab7_544
+_L1ad75ab7_543:
 	ld r0, 1
-_L28a908ba_534:
+_L1ad75ab7_544:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_535
-	ld r0, _str28a908ba_16
+	jmpc eq, _L1ad75ab7_545
+	ld r0, _str1ad75ab7_16
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_535:
+_L1ad75ab7_545:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 5
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_536
+	jmpc eq, _L1ad75ab7_546
 	ld r0, 0
-	jmp _L28a908ba_537
-_L28a908ba_536:
+	jmp _L1ad75ab7_547
+_L1ad75ab7_546:
 	ld r0, 1
-_L28a908ba_537:
+_L1ad75ab7_547:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_538
-	ld r0, _str28a908ba_17
+	jmpc eq, _L1ad75ab7_548
+	ld r0, _str1ad75ab7_17
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_538:
+_L1ad75ab7_548:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 6
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_539
+	jmpc eq, _L1ad75ab7_549
 	ld r0, 0
-	jmp _L28a908ba_540
-_L28a908ba_539:
+	jmp _L1ad75ab7_550
+_L1ad75ab7_549:
 	ld r0, 1
-_L28a908ba_540:
+_L1ad75ab7_550:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_541
-	ld r0, _str28a908ba_18
+	jmpc eq, _L1ad75ab7_551
+	ld r0, _str1ad75ab7_18
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_541:
+_L1ad75ab7_551:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 7
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_542
+	jmpc eq, _L1ad75ab7_552
 	ld r0, 0
-	jmp _L28a908ba_543
-_L28a908ba_542:
+	jmp _L1ad75ab7_553
+_L1ad75ab7_552:
 	ld r0, 1
-_L28a908ba_543:
+_L1ad75ab7_553:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_544
-	ld r0, _str28a908ba_19
+	jmpc eq, _L1ad75ab7_554
+	ld r0, _str1ad75ab7_19
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_544:
+_L1ad75ab7_554:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 8
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_545
+	jmpc eq, _L1ad75ab7_555
 	ld r0, 0
-	jmp _L28a908ba_546
-_L28a908ba_545:
+	jmp _L1ad75ab7_556
+_L1ad75ab7_555:
 	ld r0, 1
-_L28a908ba_546:
+_L1ad75ab7_556:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_547
-	ld r0, _str28a908ba_20
+	jmpc eq, _L1ad75ab7_557
+	ld r0, _str1ad75ab7_20
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_547:
+_L1ad75ab7_557:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 9
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_548
+	jmpc eq, _L1ad75ab7_558
 	ld r0, 0
-	jmp _L28a908ba_549
-_L28a908ba_548:
+	jmp _L1ad75ab7_559
+_L1ad75ab7_558:
 	ld r0, 1
-_L28a908ba_549:
+_L1ad75ab7_559:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_550
-	ld r0, _str28a908ba_21
+	jmpc eq, _L1ad75ab7_560
+	ld r0, _str1ad75ab7_21
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_550:
+_L1ad75ab7_560:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 10
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_551
+	jmpc eq, _L1ad75ab7_561
 	ld r0, 0
-	jmp _L28a908ba_552
-_L28a908ba_551:
+	jmp _L1ad75ab7_562
+_L1ad75ab7_561:
 	ld r0, 1
-_L28a908ba_552:
+_L1ad75ab7_562:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_553
-	ld r0, _str28a908ba_22
+	jmpc eq, _L1ad75ab7_563
+	ld r0, _str1ad75ab7_22
 	ld sp, bp
 	pop bp
 	ret
-_L28a908ba_553:
-	ld r0, _str28a908ba_23
+_L1ad75ab7_563:
+	ld r0, _str1ad75ab7_23
 	ld sp, bp
 	pop bp
 	ret
@@ -3214,12 +3246,12 @@ _f_relatorio:
 	ld bp, sp
 	sub sp, 6
 	call _f_nl
-	ld r0, _str28a908ba_52
+	ld r0, _str1ad75ab7_52
 	push r0
 	call _f_imp
 	add sp, 2
 	call _f_nl
-	ld r0, _str28a908ba_53
+	ld r0, _str1ad75ab7_53
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3229,26 +3261,26 @@ _f_relatorio:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_579
+	jmpc eq, _L1ad75ab7_589
 	ld r0, 0
-	jmp _L28a908ba_580
-_L28a908ba_579:
+	jmp _L1ad75ab7_590
+_L1ad75ab7_589:
 	ld r0, 1
-_L28a908ba_580:
+_L1ad75ab7_590:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_581
-	ld r0, _str28a908ba_54
+	jmpc eq, _L1ad75ab7_591
+	ld r0, _str1ad75ab7_54
 	push r0
 	call _f_imp
 	add sp, 2
-	jmp _L28a908ba_582
-_L28a908ba_581:
-	ld r0, _str28a908ba_55
+	jmp _L1ad75ab7_592
+_L1ad75ab7_591:
+	ld r0, _str1ad75ab7_55
 	push r0
 	call _f_imp
 	add sp, 2
-_L28a908ba_582:
-	ld r0, _str28a908ba_56
+_L1ad75ab7_592:
+	ld r0, _str1ad75ab7_56
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3256,7 +3288,7 @@ _L28a908ba_582:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_57
+	ld r0, _str1ad75ab7_57
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3264,12 +3296,12 @@ _L28a908ba_582:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_58
+	ld r0, _str1ad75ab7_58
 	push r0
 	call _f_imp
 	add sp, 2
 	call _f_nl
-	ld r0, _str28a908ba_59
+	ld r0, _str1ad75ab7_59
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3278,7 +3310,7 @@ _L28a908ba_582:
 	call _f_impn
 	add sp, 2
 	call _f_nl
-	ld r0, _str28a908ba_60
+	ld r0, _str1ad75ab7_60
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3286,7 +3318,7 @@ _L28a908ba_582:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_61
+	ld r0, _str1ad75ab7_61
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3295,7 +3327,7 @@ _L28a908ba_582:
 	call _f_impn
 	add sp, 2
 	call _f_nl
-	ld r0, _str28a908ba_62
+	ld r0, _str1ad75ab7_62
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3304,27 +3336,27 @@ _L28a908ba_582:
 	call _f_impn
 	add sp, 2
 	call _f_nl
-	ld r0, _str28a908ba_63
+	ld r0, _str1ad75ab7_63
 	push r0
 	call _f_imp
 	add sp, 2
 	ld r0, 0
 	st r0, (bp+-4)
-_L28a908ba_583:
+_L1ad75ab7_593:
 	ld r0, (bp+-4)
 	push r0
 	ld r0, 16
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_586
+	jmpc lt, _L1ad75ab7_596
 	ld r0, 0
-	jmp _L28a908ba_587
-_L28a908ba_586:
+	jmp _L1ad75ab7_597
+_L1ad75ab7_596:
 	ld r0, 1
-_L28a908ba_587:
+_L1ad75ab7_597:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_585
+	jmpc eq, _L1ad75ab7_595
 	ld r0, _g_conta_int
 	push r0
 	ld r0, (bp+-4)
@@ -3337,15 +3369,15 @@ _L28a908ba_587:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_588
+	jmpc ne, _L1ad75ab7_598
 	ld r0, 0
-	jmp _L28a908ba_589
-_L28a908ba_588:
+	jmp _L1ad75ab7_599
+_L1ad75ab7_598:
 	ld r0, 1
-_L28a908ba_589:
+_L1ad75ab7_599:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_590
-	ld r0, _str28a908ba_64
+	jmpc eq, _L1ad75ab7_600
+	ld r0, _str1ad75ab7_64
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3353,7 +3385,7 @@ _L28a908ba_589:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_65
+	ld r0, _str1ad75ab7_65
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3367,38 +3399,38 @@ _L28a908ba_589:
 	push r0
 	call _f_impn
 	add sp, 2
-_L28a908ba_590:
-_L28a908ba_584:
+_L1ad75ab7_600:
+_L1ad75ab7_594:
 	ld r0, (bp+-4)
 	push r0
 	add r0, 1
 	st r0, (bp+-4)
 	pop r0
-	jmp _L28a908ba_583
-_L28a908ba_585:
+	jmp _L1ad75ab7_593
+_L1ad75ab7_595:
 	call _f_nl
-	ld r0, _str28a908ba_66
+	ld r0, _str1ad75ab7_66
 	push r0
 	call _f_imp
 	add sp, 2
 	call _f_nl
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_591:
+_L1ad75ab7_601:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, (_g_criados)
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_594
+	jmpc lt, _L1ad75ab7_604
 	ld r0, 0
-	jmp _L28a908ba_595
-_L28a908ba_594:
+	jmp _L1ad75ab7_605
+_L1ad75ab7_604:
 	ld r0, 1
-_L28a908ba_595:
+_L1ad75ab7_605:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_593
+	jmpc eq, _L1ad75ab7_603
 	ld r0, _g_hist
 	push r0
 	ld r0, (bp+-2)
@@ -3407,7 +3439,7 @@ _L28a908ba_595:
 	add r1, r0
 	ld r0, r1
 	st r0, (bp+-6)
-	ld r0, _str28a908ba_67
+	ld r0, _str1ad75ab7_67
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3420,7 +3452,7 @@ _L28a908ba_595:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_68
+	ld r0, _str1ad75ab7_68
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3441,15 +3473,15 @@ _L28a908ba_595:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_596
+	jmpc eq, _L1ad75ab7_606
 	ld r0, 0
-	jmp _L28a908ba_597
-_L28a908ba_596:
+	jmp _L1ad75ab7_607
+_L1ad75ab7_606:
 	ld r0, 1
-_L28a908ba_597:
+_L1ad75ab7_607:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_598
-	ld r0, _str28a908ba_69
+	jmpc eq, _L1ad75ab7_608
+	ld r0, _str1ad75ab7_69
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3466,14 +3498,14 @@ _L28a908ba_597:
 	push r0
 	call _f_impn
 	add sp, 2
-	jmp _L28a908ba_599
-_L28a908ba_598:
-	ld r0, _str28a908ba_70
+	jmp _L1ad75ab7_609
+_L1ad75ab7_608:
+	ld r0, _str1ad75ab7_70
 	push r0
 	call _f_imp
 	add sp, 2
-_L28a908ba_599:
-	ld r0, _str28a908ba_71
+_L1ad75ab7_609:
+	ld r0, _str1ad75ab7_71
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3483,7 +3515,7 @@ _L28a908ba_599:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_72
+	ld r0, _str1ad75ab7_72
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3495,14 +3527,14 @@ _L28a908ba_599:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc gt, _L28a908ba_600
+	jmpc gt, _L1ad75ab7_610
 	ld r0, 0
-	jmp _L28a908ba_601
-_L28a908ba_600:
+	jmp _L1ad75ab7_611
+_L1ad75ab7_610:
 	ld r0, 1
-_L28a908ba_601:
+_L1ad75ab7_611:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_602
+	jmpc eq, _L1ad75ab7_612
 	ld r0, (bp+-6)
 	ld r1, r0
 	ld r0, (r1+30)
@@ -3521,15 +3553,15 @@ _L28a908ba_601:
 	push r0
 	call _f_imp_dec1
 	add sp, 2
-	jmp _L28a908ba_603
-_L28a908ba_602:
-	ld r0, _str28a908ba_73
+	jmp _L1ad75ab7_613
+_L1ad75ab7_612:
+	ld r0, _str1ad75ab7_73
 	push r0
 	call _f_imp
 	add sp, 2
-_L28a908ba_603:
+_L1ad75ab7_613:
 	call _f_nl
-	ld r0, _str28a908ba_74
+	ld r0, _str1ad75ab7_74
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3546,7 +3578,7 @@ _L28a908ba_603:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_75
+	ld r0, _str1ad75ab7_75
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3563,7 +3595,7 @@ _L28a908ba_603:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_76
+	ld r0, _str1ad75ab7_76
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3580,7 +3612,7 @@ _L28a908ba_603:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_77
+	ld r0, _str1ad75ab7_77
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3597,7 +3629,7 @@ _L28a908ba_603:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_78
+	ld r0, _str1ad75ab7_78
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3614,7 +3646,7 @@ _L28a908ba_603:
 	push r0
 	call _f_impn
 	add sp, 2
-	ld r0, _str28a908ba_79
+	ld r0, _str1ad75ab7_79
 	push r0
 	call _f_imp
 	add sp, 2
@@ -3632,24 +3664,24 @@ _L28a908ba_603:
 	call _f_impn
 	add sp, 2
 	call _f_nl
-_L28a908ba_592:
+_L1ad75ab7_602:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_591
-_L28a908ba_593:
+	jmp _L1ad75ab7_601
+_L1ad75ab7_603:
 	ld sp, bp
 	pop bp
 	ret
 _f_ocioso:
 	push bp
 	ld bp, sp
-_L28a908ba_607:
-_L28a908ba_608:
-	jmp _L28a908ba_607
-_L28a908ba_609:
+_L1ad75ab7_617:
+_L1ad75ab7_618:
+	jmp _L1ad75ab7_617
+_L1ad75ab7_619:
 	ld sp, bp
 	pop bp
 	ret
@@ -3664,10 +3696,10 @@ _f_fim_processo:
 	push r0
 	call _f_chamada_sistema
 	add sp, 6
-_L28a908ba_613:
-_L28a908ba_614:
-	jmp _L28a908ba_613
-_L28a908ba_615:
+_L1ad75ab7_623:
+_L1ad75ab7_624:
+	jmp _L1ad75ab7_623
+_L1ad75ab7_625:
 	ld sp, bp
 	pop bp
 	ret
@@ -3688,7 +3720,7 @@ _f_u_putc:
 _f_u_puts:
 	push bp
 	ld bp, sp
-_L28a908ba_620:
+_L1ad75ab7_630:
 	ld r0, (bp+4)
 	ld r1, r0
 	ldb r0, (r1)
@@ -3698,14 +3730,14 @@ _L28a908ba_620:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ne, _L28a908ba_622
+	jmpc ne, _L1ad75ab7_632
 	ld r0, 0
-	jmp _L28a908ba_623
-_L28a908ba_622:
+	jmp _L1ad75ab7_633
+_L1ad75ab7_632:
 	ld r0, 1
-_L28a908ba_623:
+_L1ad75ab7_633:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_621
+	jmpc eq, _L1ad75ab7_631
 	ld r0, (bp+4)
 	ld r1, r0
 	ldb r0, (r1)
@@ -3718,8 +3750,8 @@ _L28a908ba_623:
 	add r0, 1
 	st r0, (bp+4)
 	pop r0
-	jmp _L28a908ba_620
-_L28a908ba_621:
+	jmp _L1ad75ab7_630
+_L1ad75ab7_631:
 	ld sp, bp
 	pop bp
 	ret
@@ -3732,14 +3764,14 @@ _f_u_putn:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_630
+	jmpc lt, _L1ad75ab7_640
 	ld r0, 0
-	jmp _L28a908ba_631
-_L28a908ba_630:
+	jmp _L1ad75ab7_641
+_L1ad75ab7_640:
 	ld r0, 1
-_L28a908ba_631:
+_L1ad75ab7_641:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_632
+	jmpc eq, _L1ad75ab7_642
 	ld r0, 45
 	push r0
 	call _f_u_putc
@@ -3751,21 +3783,21 @@ _L28a908ba_631:
 	pop r0
 	sub r0, r1
 	st r0, (bp+4)
-_L28a908ba_632:
+_L1ad75ab7_642:
 	ld r0, (bp+4)
 	push r0
 	ld r0, 10
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ge, _L28a908ba_633
+	jmpc ge, _L1ad75ab7_643
 	ld r0, 0
-	jmp _L28a908ba_634
-_L28a908ba_633:
+	jmp _L1ad75ab7_644
+_L1ad75ab7_643:
 	ld r0, 1
-_L28a908ba_634:
+_L1ad75ab7_644:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_635
+	jmpc eq, _L1ad75ab7_645
 	ld r0, (bp+4)
 	push r0
 	ld r0, 10
@@ -3775,7 +3807,7 @@ _L28a908ba_634:
 	push r0
 	call _f_u_putn
 	add sp, 2
-_L28a908ba_635:
+_L1ad75ab7_645:
 	ld r0, 48
 	push r0
 	ld r0, (bp+4)
@@ -3871,54 +3903,54 @@ _f_gasta_cpu:
 	sub sp, 4
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_646:
+_L1ad75ab7_656:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, (bp+4)
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_649
+	jmpc lt, _L1ad75ab7_659
 	ld r0, 0
-	jmp _L28a908ba_650
-_L28a908ba_649:
+	jmp _L1ad75ab7_660
+_L1ad75ab7_659:
 	ld r0, 1
-_L28a908ba_650:
+_L1ad75ab7_660:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_648
+	jmpc eq, _L1ad75ab7_658
 	ld r0, 0
 	st r0, (bp+-4)
-_L28a908ba_651:
+_L1ad75ab7_661:
 	ld r0, (bp+-4)
 	push r0
 	ld r0, 50
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_654
+	jmpc lt, _L1ad75ab7_664
 	ld r0, 0
-	jmp _L28a908ba_655
-_L28a908ba_654:
+	jmp _L1ad75ab7_665
+_L1ad75ab7_664:
 	ld r0, 1
-_L28a908ba_655:
+_L1ad75ab7_665:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_653
-_L28a908ba_652:
+	jmpc eq, _L1ad75ab7_663
+_L1ad75ab7_662:
 	ld r0, (bp+-4)
 	push r0
 	add r0, 1
 	st r0, (bp+-4)
 	pop r0
-	jmp _L28a908ba_651
-_L28a908ba_653:
-_L28a908ba_647:
+	jmp _L1ad75ab7_661
+_L1ad75ab7_663:
+_L1ad75ab7_657:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_646
-_L28a908ba_648:
+	jmp _L1ad75ab7_656
+_L1ad75ab7_658:
 	ld sp, bp
 	pop bp
 	ret
@@ -3928,21 +3960,21 @@ _f_p_tartaruga:
 	sub sp, 2
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_661:
+_L1ad75ab7_671:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 4
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_664
+	jmpc lt, _L1ad75ab7_674
 	ld r0, 0
-	jmp _L28a908ba_665
-_L28a908ba_664:
+	jmp _L1ad75ab7_675
+_L1ad75ab7_674:
 	ld r0, 1
-_L28a908ba_665:
+_L1ad75ab7_675:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_663
+	jmpc eq, _L1ad75ab7_673
 	ld r0, 60
 	push r0
 	call _f_gasta_cpu
@@ -3951,14 +3983,14 @@ _L28a908ba_665:
 	push r0
 	call _f_u_putc
 	add sp, 2
-_L28a908ba_662:
+_L1ad75ab7_672:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_661
-_L28a908ba_663:
+	jmp _L1ad75ab7_671
+_L1ad75ab7_673:
 	ld sp, bp
 	pop bp
 	ret
@@ -3968,21 +4000,21 @@ _f_p_lebre:
 	sub sp, 2
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_671:
+_L1ad75ab7_681:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 12
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_674
+	jmpc lt, _L1ad75ab7_684
 	ld r0, 0
-	jmp _L28a908ba_675
-_L28a908ba_674:
+	jmp _L1ad75ab7_685
+_L1ad75ab7_684:
 	ld r0, 1
-_L28a908ba_675:
+_L1ad75ab7_685:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_673
+	jmpc eq, _L1ad75ab7_683
 	ld r0, 2
 	push r0
 	call _f_gasta_cpu
@@ -3991,14 +4023,14 @@ _L28a908ba_675:
 	push r0
 	call _f_u_putc
 	add sp, 2
-_L28a908ba_672:
+_L1ad75ab7_682:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_671
-_L28a908ba_673:
+	jmp _L1ad75ab7_681
+_L1ad75ab7_683:
 	ld sp, bp
 	pop bp
 	ret
@@ -4008,21 +4040,21 @@ _f_p_contador:
 	sub sp, 2
 	ld r0, 0
 	st r0, (bp+-2)
-_L28a908ba_681:
+_L1ad75ab7_691:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 10
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_684
+	jmpc lt, _L1ad75ab7_694
 	ld r0, 0
-	jmp _L28a908ba_685
-_L28a908ba_684:
+	jmp _L1ad75ab7_695
+_L1ad75ab7_694:
 	ld r0, 1
-_L28a908ba_685:
+_L1ad75ab7_695:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_683
+	jmpc eq, _L1ad75ab7_693
 	ld r0, 10
 	push r0
 	call _f_gasta_cpu
@@ -4031,14 +4063,14 @@ _L28a908ba_685:
 	push r0
 	call _f_u_putn
 	add sp, 2
-_L28a908ba_682:
+_L1ad75ab7_692:
 	ld r0, (bp+-2)
 	push r0
 	add r0, 1
 	st r0, (bp+-2)
 	pop r0
-	jmp _L28a908ba_681
-_L28a908ba_683:
+	jmp _L1ad75ab7_691
+_L1ad75ab7_693:
 	ld sp, bp
 	pop bp
 	ret
@@ -4106,7 +4138,7 @@ _f_p_formiga:
 _f_p_imortal:
 	push bp
 	ld bp, sp
-_L28a908ba_689:
+_L1ad75ab7_699:
 	ld r0, 10
 	push r0
 	call _f_gasta_cpu
@@ -4115,9 +4147,9 @@ _L28a908ba_689:
 	push r0
 	call _f_u_putc
 	add sp, 2
-_L28a908ba_690:
-	jmp _L28a908ba_689
-_L28a908ba_691:
+_L1ad75ab7_700:
+	jmp _L1ad75ab7_699
+_L1ad75ab7_701:
 	ld sp, bp
 	pop bp
 	ret
@@ -4165,7 +4197,7 @@ _f_p_eco:
 	push bp
 	ld bp, sp
 	sub sp, 2
-_L28a908ba_705:
+_L1ad75ab7_715:
 	call _f_u_le
 	st r0, (bp+-2)
 	ld r0, (bp+-2)
@@ -4174,51 +4206,51 @@ _L28a908ba_705:
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc eq, _L28a908ba_708
+	jmpc eq, _L1ad75ab7_718
 	ld r0, 0
-	jmp _L28a908ba_709
-_L28a908ba_708:
+	jmp _L1ad75ab7_719
+_L1ad75ab7_718:
 	ld r0, 1
-_L28a908ba_709:
+_L1ad75ab7_719:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_710
-	jmp _L28a908ba_707
-_L28a908ba_710:
+	jmpc eq, _L1ad75ab7_720
+	jmp _L1ad75ab7_717
+_L1ad75ab7_720:
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 97
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc ge, _L28a908ba_713
+	jmpc ge, _L1ad75ab7_723
 	ld r0, 0
-	jmp _L28a908ba_714
-_L28a908ba_713:
+	jmp _L1ad75ab7_724
+_L1ad75ab7_723:
 	ld r0, 1
-_L28a908ba_714:
+_L1ad75ab7_724:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_712
+	jmpc eq, _L1ad75ab7_722
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 122
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc le, _L28a908ba_715
+	jmpc le, _L1ad75ab7_725
 	ld r0, 0
-	jmp _L28a908ba_716
-_L28a908ba_715:
+	jmp _L1ad75ab7_726
+_L1ad75ab7_725:
 	ld r0, 1
-_L28a908ba_716:
+_L1ad75ab7_726:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_712
+	jmpc eq, _L1ad75ab7_722
 	ld r0, 1
-	jmp _L28a908ba_711
-_L28a908ba_712:
+	jmp _L1ad75ab7_721
+_L1ad75ab7_722:
 	ld r0, 0
-_L28a908ba_711:
+_L1ad75ab7_721:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_717
+	jmpc eq, _L1ad75ab7_727
 	ld r0, (bp+-2)
 	push r0
 	ld r0, 32
@@ -4226,14 +4258,14 @@ _L28a908ba_711:
 	pop r0
 	sub r0, r1
 	st r0, (bp+-2)
-_L28a908ba_717:
+_L1ad75ab7_727:
 	ld r0, (bp+-2)
 	push r0
 	call _f_u_putc
 	add sp, 2
-_L28a908ba_706:
-	jmp _L28a908ba_705
-_L28a908ba_707:
+_L1ad75ab7_716:
+	jmp _L1ad75ab7_715
+_L1ad75ab7_717:
 	ld r0, 10
 	push r0
 	call _f_u_putc
@@ -4257,7 +4289,7 @@ _f_p_init:
 	push bp
 	ld bp, sp
 	sub sp, 36
-	ld r0, _str28a908ba_86
+	ld r0, _str1ad75ab7_86
 	push r0
 	call _f_u_puts
 	add sp, 2
@@ -4292,7 +4324,7 @@ _f_p_init:
 	push r0
 	call _f_u_putc
 	add sp, 2
-	ld r0, _str28a908ba_87
+	ld r0, _str1ad75ab7_87
 	push r0
 	call _f_u_puts
 	add sp, 2
@@ -4329,7 +4361,7 @@ _f_p_init:
 	push r0
 	call _f_u_putc
 	add sp, 2
-	ld r0, _str28a908ba_88
+	ld r0, _str1ad75ab7_88
 	push r0
 	call _f_u_puts
 	add sp, 2
@@ -4346,7 +4378,7 @@ _f_p_init:
 	push r0
 	call _f_u_putc
 	add sp, 2
-	ld r0, _str28a908ba_89
+	ld r0, _str1ad75ab7_89
 	push r0
 	call _f_u_puts
 	add sp, 2
@@ -4354,41 +4386,41 @@ _f_p_init:
 	st r0, (bp+-12)
 	ld r0, 0
 	st r0, (bp+-10)
-_L28a908ba_731:
+_L1ad75ab7_741:
 	ld r0, (bp+-10)
 	push r0
 	ld r0, 8
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_734
+	jmpc lt, _L1ad75ab7_744
 	ld r0, 0
-	jmp _L28a908ba_735
-_L28a908ba_734:
+	jmp _L1ad75ab7_745
+_L1ad75ab7_744:
 	ld r0, 1
-_L28a908ba_735:
+_L1ad75ab7_745:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_733
+	jmpc eq, _L1ad75ab7_743
 	ld r0, 6
 	push r0
 	call _f_u_cria
 	add sp, 2
 	st r0, (bp+-14)
-_L28a908ba_736:
+_L1ad75ab7_746:
 	ld r0, (bp+-14)
 	push r0
 	ld r0, 0
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_738
+	jmpc lt, _L1ad75ab7_748
 	ld r0, 0
-	jmp _L28a908ba_739
-_L28a908ba_738:
+	jmp _L1ad75ab7_749
+_L1ad75ab7_748:
 	ld r0, 1
-_L28a908ba_739:
+_L1ad75ab7_749:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_737
+	jmpc eq, _L1ad75ab7_747
 	ld r0, bp
 	add r0, -36
 	push r0
@@ -4410,8 +4442,8 @@ _L28a908ba_739:
 	call _f_u_cria
 	add sp, 2
 	st r0, (bp+-14)
-	jmp _L28a908ba_736
-_L28a908ba_737:
+	jmp _L1ad75ab7_746
+_L1ad75ab7_747:
 	ld r0, bp
 	add r0, -36
 	push r0
@@ -4423,29 +4455,29 @@ _L28a908ba_737:
 	ld r0, (bp+-14)
 	pop r1
 	st r0, (r1)
-_L28a908ba_732:
+_L1ad75ab7_742:
 	ld r0, (bp+-10)
 	push r0
 	add r0, 1
 	st r0, (bp+-10)
 	pop r0
-	jmp _L28a908ba_731
-_L28a908ba_733:
-_L28a908ba_740:
+	jmp _L1ad75ab7_741
+_L1ad75ab7_743:
+_L1ad75ab7_750:
 	ld r0, (bp+-12)
 	push r0
 	ld r0, 8
 	ld r1, r0
 	pop r0
 	cmp r0, r1
-	jmpc lt, _L28a908ba_742
+	jmpc lt, _L1ad75ab7_752
 	ld r0, 0
-	jmp _L28a908ba_743
-_L28a908ba_742:
+	jmp _L1ad75ab7_753
+_L1ad75ab7_752:
 	ld r0, 1
-_L28a908ba_743:
+_L1ad75ab7_753:
 	cmp r0, 0
-	jmpc eq, _L28a908ba_741
+	jmpc eq, _L1ad75ab7_751
 	ld r0, bp
 	add r0, -36
 	push r0
@@ -4462,13 +4494,13 @@ _L28a908ba_743:
 	add r0, 1
 	st r0, (bp+-12)
 	pop r0
-	jmp _L28a908ba_740
-_L28a908ba_741:
+	jmp _L1ad75ab7_750
+_L1ad75ab7_751:
 	ld r0, 10
 	push r0
 	call _f_u_putc
 	add sp, 2
-	ld r0, _str28a908ba_90
+	ld r0, _str1ad75ab7_90
 	push r0
 	call _f_u_puts
 	add sp, 2
@@ -4505,7 +4537,7 @@ _L28a908ba_741:
 	push r0
 	call _f_u_putc
 	add sp, 2
-	ld r0, _str28a908ba_91
+	ld r0, _str1ad75ab7_91
 	push r0
 	call _f_u_puts
 	add sp, 2
@@ -7289,6 +7321,27 @@ _g_conta_int:
 _g_so_q:
 	.db 0
 	.db 0
+_g_contagem_console:
+	.db 0
+	.db 0
+_g_console_original:
+	.db 0
+	.db 0
+_g_usa_gancho_console:
+	.dw 0
+_g_debug_boot:
+	.dw 1
+_g_dbg_n:
+	.db 0
+	.db 0
+_g_dbg_w:
+	.db 0
+	.db 0
+_g_dbg_i:
+	.db 0
+	.db 0
+_g_con_verifica:
+	.dw 1
 _g_politica:
 	.dw 1
 _g_quantum:
@@ -7306,187 +7359,187 @@ _g_alvo_global:
 	.db 0
 
 ; ----- literais de string -----
-_str28a908ba_0:
+_str1ad75ab7_0:
 	.db 105, 110, 105, 116, 0
-_str28a908ba_1:
+_str1ad75ab7_1:
 	.db 116, 97, 114, 116, 97, 114, 117, 103, 97, 0
-_str28a908ba_2:
+_str1ad75ab7_2:
 	.db 108, 101, 98, 114, 101, 0
-_str28a908ba_3:
+_str1ad75ab7_3:
 	.db 99, 111, 110, 116, 97, 100, 111, 114, 0
-_str28a908ba_4:
+_str1ad75ab7_4:
 	.db 102, 97, 98, 114, 105, 99, 97, 0
-_str28a908ba_5:
+_str1ad75ab7_5:
 	.db 111, 112, 101, 114, 97, 114, 105, 111, 0
-_str28a908ba_6:
+_str1ad75ab7_6:
 	.db 102, 111, 114, 109, 105, 103, 97, 0
-_str28a908ba_7:
+_str1ad75ab7_7:
 	.db 105, 109, 111, 114, 116, 97, 108, 0
-_str28a908ba_8:
+_str1ad75ab7_8:
 	.db 99, 97, 114, 114, 97, 115, 99, 111, 0
-_str28a908ba_9:
+_str1ad75ab7_9:
 	.db 115, 117, 105, 99, 105, 100, 97, 0
-_str28a908ba_10:
+_str1ad75ab7_10:
 	.db 101, 99, 111, 0
-_str28a908ba_11:
+_str1ad75ab7_11:
 	.db 105, 110, 116, 114, 117, 115, 111, 0
-_str28a908ba_12:
+_str1ad75ab7_12:
 	.db 105, 110, 105, 116, 0
-_str28a908ba_13:
+_str1ad75ab7_13:
 	.db 116, 97, 114, 116, 97, 114, 117, 103, 97, 0
-_str28a908ba_14:
+_str1ad75ab7_14:
 	.db 108, 101, 98, 114, 101, 0
-_str28a908ba_15:
+_str1ad75ab7_15:
 	.db 99, 111, 110, 116, 97, 100, 111, 114, 0
-_str28a908ba_16:
+_str1ad75ab7_16:
 	.db 102, 97, 98, 114, 105, 99, 97, 0
-_str28a908ba_17:
+_str1ad75ab7_17:
 	.db 111, 112, 101, 114, 97, 114, 105, 111, 0
-_str28a908ba_18:
+_str1ad75ab7_18:
 	.db 102, 111, 114, 109, 105, 103, 97, 0
-_str28a908ba_19:
+_str1ad75ab7_19:
 	.db 105, 109, 111, 114, 116, 97, 108, 0
-_str28a908ba_20:
+_str1ad75ab7_20:
 	.db 99, 97, 114, 114, 97, 115, 99, 111, 0
-_str28a908ba_21:
+_str1ad75ab7_21:
 	.db 115, 117, 105, 99, 105, 100, 97, 0
-_str28a908ba_22:
+_str1ad75ab7_22:
 	.db 101, 99, 111, 0
-_str28a908ba_23:
+_str1ad75ab7_23:
 	.db 105, 110, 116, 114, 117, 115, 111, 0
-_str28a908ba_24:
+_str1ad75ab7_24:
 	.db 61, 61, 61, 32, 77, 69, 84, 82, 73, 67, 65, 83, 32, 68, 79, 32, 83, 79, 32, 61, 61, 61, 0
-_str28a908ba_25:
+_str1ad75ab7_25:
 	.db 112, 111, 108, 105, 116, 105, 99, 97, 58, 32, 0
-_str28a908ba_26:
+_str1ad75ab7_26:
 	.db 112, 114, 105, 111, 114, 105, 100, 97, 100, 101, 0
-_str28a908ba_27:
+_str1ad75ab7_27:
 	.db 114, 111, 117, 110, 100, 45, 114, 111, 98, 105, 110, 0
-_str28a908ba_28:
+_str1ad75ab7_28:
 	.db 32, 32, 113, 117, 97, 110, 116, 117, 109, 58, 32, 0
-_str28a908ba_29:
+_str1ad75ab7_29:
 	.db 32, 116, 105, 99, 107, 115, 32, 32, 116, 105, 99, 107, 58, 32, 0
-_str28a908ba_30:
+_str1ad75ab7_30:
 	.db 32, 105, 110, 115, 116, 114, 0
-_str28a908ba_31:
+_str1ad75ab7_31:
 	.db 112, 114, 111, 99, 101, 115, 115, 111, 115, 32, 99, 114, 105, 97, 100, 111, 115, 58, 32, 0
-_str28a908ba_32:
+_str1ad75ab7_32:
 	.db 116, 101, 109, 112, 111, 32, 116, 111, 116, 97, 108, 32, 40, 116, 105, 99, 107, 115, 41, 58, 32, 0
-_str28a908ba_33:
+_str1ad75ab7_33:
 	.db 32, 32, 111, 99, 105, 111, 115, 111, 58, 32, 0
-_str28a908ba_34:
+_str1ad75ab7_34:
 	.db 112, 114, 101, 101, 109, 112, 99, 111, 101, 115, 58, 32, 0
-_str28a908ba_35:
+_str1ad75ab7_35:
 	.db 105, 110, 116, 101, 114, 114, 117, 112, 99, 111, 101, 115, 32, 112, 111, 114, 32, 116, 105, 112, 111, 58, 0
-_str28a908ba_36:
+_str1ad75ab7_36:
 	.db 32, 91, 0
-_str28a908ba_37:
+_str1ad75ab7_37:
 	.db 93, 61, 0
-_str28a908ba_38:
+_str1ad75ab7_38:
 	.db 40, 116, 101, 109, 112, 111, 115, 32, 101, 109, 32, 116, 105, 99, 107, 115, 59, 32, 80, 61, 112, 114, 111, 110, 116, 111, 32, 66, 61, 98, 108, 111, 113, 117, 101, 97, 100, 111, 32, 69, 61, 101, 120, 101, 99, 117, 116, 97, 110, 100, 111, 41, 0
-_str28a908ba_39:
+_str1ad75ab7_39:
 	.db 112, 105, 100, 32, 0
-_str28a908ba_40:
+_str1ad75ab7_40:
 	.db 32, 0
-_str28a908ba_41:
+_str1ad75ab7_41:
 	.db 32, 114, 101, 116, 111, 114, 110, 111, 61, 0
-_str28a908ba_42:
+_str1ad75ab7_42:
 	.db 32, 114, 101, 116, 111, 114, 110, 111, 61, 40, 118, 105, 118, 111, 41, 0
-_str28a908ba_43:
+_str1ad75ab7_43:
 	.db 32, 112, 114, 101, 101, 109, 112, 99, 111, 101, 115, 61, 0
-_str28a908ba_44:
+_str1ad75ab7_44:
 	.db 32, 114, 101, 115, 112, 111, 115, 116, 97, 95, 109, 101, 100, 105, 97, 61, 0
-_str28a908ba_45:
+_str1ad75ab7_45:
 	.db 45, 0
-_str28a908ba_46:
+_str1ad75ab7_46:
 	.db 32, 32, 32, 32, 101, 110, 116, 114, 97, 100, 97, 115, 32, 80, 47, 66, 47, 69, 58, 32, 0
-_str28a908ba_47:
+_str1ad75ab7_47:
 	.db 47, 0
-_str28a908ba_48:
+_str1ad75ab7_48:
 	.db 47, 0
-_str28a908ba_49:
+_str1ad75ab7_49:
 	.db 32, 32, 32, 116, 105, 99, 107, 115, 32, 80, 47, 66, 47, 69, 58, 32, 0
-_str28a908ba_50:
+_str1ad75ab7_50:
 	.db 47, 0
-_str28a908ba_51:
+_str1ad75ab7_51:
 	.db 47, 0
-_str28a908ba_52:
+_str1ad75ab7_52:
 	.db 61, 61, 61, 32, 77, 69, 84, 82, 73, 67, 65, 83, 32, 68, 79, 32, 83, 79, 32, 61, 61, 61, 0
-_str28a908ba_53:
+_str1ad75ab7_53:
 	.db 112, 111, 108, 105, 116, 105, 99, 97, 58, 32, 0
-_str28a908ba_54:
+_str1ad75ab7_54:
 	.db 112, 114, 105, 111, 114, 105, 100, 97, 100, 101, 0
-_str28a908ba_55:
+_str1ad75ab7_55:
 	.db 114, 111, 117, 110, 100, 45, 114, 111, 98, 105, 110, 0
-_str28a908ba_56:
+_str1ad75ab7_56:
 	.db 32, 32, 113, 117, 97, 110, 116, 117, 109, 58, 32, 0
-_str28a908ba_57:
+_str1ad75ab7_57:
 	.db 32, 116, 105, 99, 107, 115, 32, 32, 116, 105, 99, 107, 58, 32, 0
-_str28a908ba_58:
+_str1ad75ab7_58:
 	.db 32, 105, 110, 115, 116, 114, 0
-_str28a908ba_59:
+_str1ad75ab7_59:
 	.db 112, 114, 111, 99, 101, 115, 115, 111, 115, 32, 99, 114, 105, 97, 100, 111, 115, 58, 32, 0
-_str28a908ba_60:
+_str1ad75ab7_60:
 	.db 116, 101, 109, 112, 111, 32, 116, 111, 116, 97, 108, 32, 40, 116, 105, 99, 107, 115, 41, 58, 32, 0
-_str28a908ba_61:
+_str1ad75ab7_61:
 	.db 32, 32, 111, 99, 105, 111, 115, 111, 58, 32, 0
-_str28a908ba_62:
+_str1ad75ab7_62:
 	.db 112, 114, 101, 101, 109, 112, 99, 111, 101, 115, 58, 32, 0
-_str28a908ba_63:
+_str1ad75ab7_63:
 	.db 105, 110, 116, 101, 114, 114, 117, 112, 99, 111, 101, 115, 32, 112, 111, 114, 32, 116, 105, 112, 111, 58, 0
-_str28a908ba_64:
+_str1ad75ab7_64:
 	.db 32, 91, 0
-_str28a908ba_65:
+_str1ad75ab7_65:
 	.db 93, 61, 0
-_str28a908ba_66:
+_str1ad75ab7_66:
 	.db 40, 116, 101, 109, 112, 111, 115, 32, 101, 109, 32, 116, 105, 99, 107, 115, 59, 32, 80, 61, 112, 114, 111, 110, 116, 111, 32, 66, 61, 98, 108, 111, 113, 117, 101, 97, 100, 111, 32, 69, 61, 101, 120, 101, 99, 117, 116, 97, 110, 100, 111, 41, 0
-_str28a908ba_67:
+_str1ad75ab7_67:
 	.db 112, 105, 100, 32, 0
-_str28a908ba_68:
+_str1ad75ab7_68:
 	.db 32, 0
-_str28a908ba_69:
+_str1ad75ab7_69:
 	.db 32, 114, 101, 116, 111, 114, 110, 111, 61, 0
-_str28a908ba_70:
+_str1ad75ab7_70:
 	.db 32, 114, 101, 116, 111, 114, 110, 111, 61, 40, 118, 105, 118, 111, 41, 0
-_str28a908ba_71:
+_str1ad75ab7_71:
 	.db 32, 112, 114, 101, 101, 109, 112, 99, 111, 101, 115, 61, 0
-_str28a908ba_72:
+_str1ad75ab7_72:
 	.db 32, 114, 101, 115, 112, 111, 115, 116, 97, 95, 109, 101, 100, 105, 97, 61, 0
-_str28a908ba_73:
+_str1ad75ab7_73:
 	.db 45, 0
-_str28a908ba_74:
+_str1ad75ab7_74:
 	.db 32, 32, 32, 32, 101, 110, 116, 114, 97, 100, 97, 115, 32, 80, 47, 66, 47, 69, 58, 32, 0
-_str28a908ba_75:
+_str1ad75ab7_75:
 	.db 47, 0
-_str28a908ba_76:
+_str1ad75ab7_76:
 	.db 47, 0
-_str28a908ba_77:
+_str1ad75ab7_77:
 	.db 32, 32, 32, 116, 105, 99, 107, 115, 32, 80, 47, 66, 47, 69, 58, 32, 0
-_str28a908ba_78:
+_str1ad75ab7_78:
 	.db 47, 0
-_str28a908ba_79:
+_str1ad75ab7_79:
 	.db 47, 0
-_str28a908ba_80:
+_str1ad75ab7_80:
 	.db 91, 105, 110, 105, 116, 93, 32, 99, 111, 114, 114, 105, 100, 97, 58, 32, 0
-_str28a908ba_81:
+_str1ad75ab7_81:
 	.db 91, 105, 110, 105, 116, 93, 32, 101, 114, 114, 111, 115, 32, 40, 101, 115, 112, 101, 114, 97, 100, 111, 32, 45, 49, 32, 45, 49, 32, 45, 49, 41, 58, 32, 0
-_str28a908ba_82:
+_str1ad75ab7_82:
 	.db 91, 105, 110, 105, 116, 93, 32, 102, 97, 98, 114, 105, 99, 97, 58, 32, 0
-_str28a908ba_83:
+_str1ad75ab7_83:
 	.db 91, 105, 110, 105, 116, 93, 32, 102, 111, 114, 109, 105, 103, 97, 115, 58, 32, 0
-_str28a908ba_84:
+_str1ad75ab7_84:
 	.db 91, 105, 110, 105, 116, 93, 32, 99, 97, 114, 114, 97, 115, 99, 111, 58, 32, 0
-_str28a908ba_85:
+_str1ad75ab7_85:
 	.db 91, 105, 110, 105, 116, 93, 32, 102, 105, 109, 0
-_str28a908ba_86:
+_str1ad75ab7_86:
 	.db 91, 105, 110, 105, 116, 93, 32, 99, 111, 114, 114, 105, 100, 97, 58, 32, 0
-_str28a908ba_87:
+_str1ad75ab7_87:
 	.db 91, 105, 110, 105, 116, 93, 32, 101, 114, 114, 111, 115, 32, 40, 101, 115, 112, 101, 114, 97, 100, 111, 32, 45, 49, 32, 45, 49, 32, 45, 49, 41, 58, 32, 0
-_str28a908ba_88:
+_str1ad75ab7_88:
 	.db 91, 105, 110, 105, 116, 93, 32, 102, 97, 98, 114, 105, 99, 97, 58, 32, 0
-_str28a908ba_89:
+_str1ad75ab7_89:
 	.db 91, 105, 110, 105, 116, 93, 32, 102, 111, 114, 109, 105, 103, 97, 115, 58, 32, 0
-_str28a908ba_90:
+_str1ad75ab7_90:
 	.db 91, 105, 110, 105, 116, 93, 32, 99, 97, 114, 114, 97, 115, 99, 111, 58, 32, 0
-_str28a908ba_91:
+_str1ad75ab7_91:
 	.db 91, 105, 110, 105, 116, 93, 32, 102, 105, 109, 0
